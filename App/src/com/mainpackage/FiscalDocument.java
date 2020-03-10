@@ -1,13 +1,16 @@
 package com.mainpackage;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class FiscalDocument {
     public FiscalDocument() {
+        this.institutionList = new ArrayList<Institution>();
     }
     public FiscalDocument(int id, String title) {
         this.id = id;
         this.title = title;
+        this.institutionList = new ArrayList<Institution>();
     }
 
     private int id;

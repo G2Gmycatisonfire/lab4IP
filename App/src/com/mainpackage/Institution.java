@@ -1,13 +1,17 @@
 package com.mainpackage;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Institution {
     public Institution() {
+        this.fiscalDocuments = new ArrayList<FiscalDocument>();
     }
     public Institution(int id, String title) {
         this.id = id;
         this.title = title;
+        this.fiscalDocuments = new ArrayList<FiscalDocument>();
     }
 
     private int id;
